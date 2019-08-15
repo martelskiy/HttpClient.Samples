@@ -8,17 +8,17 @@ namespace HttpClient.Samples
 {
     public static class CustomHttpClientConfiguration
     {
-        public static void AddGenericHttpClient(this IServiceCollection services, string baseAddress)
+        public static void AddCustomHttpClient(this IServiceCollection services, string baseAddress)
         {
-            AddGenericHttpClient(services, baseAddress, null, new PolicyOption());
+            AddCustomHttpClient(services, baseAddress, null, new PolicyOption());
         }
 
-        public static void AddGenericHttpClient(this IServiceCollection services, string baseAddress, KeyValuePair<string, string>[] headers)
+        public static void AddCustomHttpClient(this IServiceCollection services, string baseAddress, KeyValuePair<string, string>[] headers)
         {
-            AddGenericHttpClient(services, baseAddress, headers, new PolicyOption());
+            AddCustomHttpClient(services, baseAddress, headers, new PolicyOption());
         }
 
-        public static void AddGenericHttpClient(this IServiceCollection services, string baseAddress, KeyValuePair<string, string>[] headers, PolicyOption policyOption)
+        public static void AddCustomHttpClient(this IServiceCollection services, string baseAddress, KeyValuePair<string, string>[] headers, PolicyOption policyOption)
         {
             services.AddSingleton<IPolicyBuilder, PolicyBuilder>();
 

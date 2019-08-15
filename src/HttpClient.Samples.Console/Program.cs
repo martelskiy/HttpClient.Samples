@@ -11,7 +11,7 @@ namespace HttpClient.Samples.Console
         static async Task Main()
         {
             var host = new HostBuilder()
-                .ConfigureServices((hostContext, services) => services.AddGenericHttpClient("http://dummyurl"))
+                .ConfigureServices((hostContext, services) => services.AddCustomHttpClient("http://dummyurl"))
                 .ConfigureLogging(builder =>
                 {
                     builder.AddConsole();
