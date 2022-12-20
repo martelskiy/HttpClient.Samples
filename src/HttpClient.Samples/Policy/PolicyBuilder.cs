@@ -16,7 +16,7 @@ namespace HttpClient.Samples.Policy
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
-        public RetryPolicy<HttpResponseMessage> BuildGenericPolicy(PolicyOption policyOption)
+        public IAsyncPolicy<HttpResponseMessage> BuildGenericPolicy(PolicyOption policyOption)
         {
             return HttpPolicyExtensions
                 .HandleTransientHttpError()

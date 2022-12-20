@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29209.62
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E6114740-EB39-40BB-9FAB-DF1E3FBCFDF3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClient.Samples", "src\HttpClient.Samples\HttpClient.Samples.csproj", "{6115EF5A-5668-4137-A593-C4A5CF25EBC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClient.Samples.Console", "src\HttpClient.Samples.Console\HttpClient.Samples.Console.csproj", "{1044C175-6A4B-45E3-B88A-249922C9090A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpClient.Samples.Console", "src\HttpClient.Samples.Console\HttpClient.Samples.Console.csproj", "{1044C175-6A4B-45E3-B88A-249922C9090A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{26DD4DC0-BCD0-4C6E-B091-C5F602E14EEB}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

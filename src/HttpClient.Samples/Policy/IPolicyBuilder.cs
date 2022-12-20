@@ -1,10 +1,11 @@
 ﻿using System.Net.Http;
-using Polly.Retry;
+using Polly;
 
 namespace HttpClient.Samples.Policy
 {
     public interface IPolicyBuilder
     {
-        RetryPolicy<HttpResponseMessage> BuildGenericPolicy(PolicyOption policyOption);
+        IAsyncPolicy<HttpResponseMessage> BuildGenericPolicy(PolicyOption policyOption);
     }
 }
+    
